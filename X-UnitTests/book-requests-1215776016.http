@@ -1,0 +1,30 @@
+GET http://localhost:4000/api/v1/books
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2RhNTYwNWE1YzkzZjk5NTU1ZWQ4ZiIsImlhdCI6MTY5OTAzNTYzOCwiZXhwIjoxNjk5ODk5NjM4fQ.01eZzdXswg9t4EdT_URdAtaJ2lBXC5Do1Qx8XdUa0YY!
+
+###
+GET http://localhost:4000/api/v1/books/65453a65cecea75420b92525
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2RhNTYwNWE1YzkzZjk5NTU1ZWQ4ZiIsImlhdCI6MTY5OTAzNTYzOCwiZXhwIjoxNjk5ODk5NjM4fQ.01eZzdXswg9t4EdT_URdAtaJ2lBXC5Do1Qx8XdUa0YY!
+
+###
+POST http://localhost:4000/api/v1/books
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2RhNTYwNWE1YzkzZjk5NTU1ZWQ4ZiIsImlhdCI6MTY5OTAzNTYzOCwiZXhwIjoxNjk5ODk5NjM4fQ.01eZzdXswg9t4EdT_URdAtaJ2lBXC5Do1Qx8XdUa0YY!
+
+{ 
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "year": 1997,
+    "description": "children's book about a young wizard",
+    "exchangeType": "trade"
+}
+
+###
+
+POST http://localhost:4000/api/v1/users/login HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "email": "klwenglarz@gmail.com",
+    "password": "foobar2023"
+}
